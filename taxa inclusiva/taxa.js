@@ -8,3 +8,7 @@ function Carros(mark, price) {
   console.log(marca, preco, precoFinal)
  
 };
+
+const honda = new Carros('Honda', 3000);
+const ferrari = new Carros('Ferrari', 70000);
+const lamborghine = new Carros('Lamborghine', 77000);
