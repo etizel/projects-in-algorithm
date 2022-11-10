@@ -26,3 +26,11 @@ console.log(nodeList);
 
 const listArray = Array.prototype.slice.call(nodeList);
 const listArray2 = Array.from(nodeList);
+
+
+
+
+// prototype list method
+Object.getOwnPropertyNames(NodeList.prototype);
+Object.getOwnPropertyNames(HTMLAllCollection.prototype);
+Object.getOwnPropertyNames(Document.prototype);
