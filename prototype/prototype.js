@@ -1,18 +1,12 @@
 
 function Pessoas(nome, sobrenome, idade) {
-  this.selector = 'li';
-  const element = document.querySelectorAll(this.selector);
-  this.elementResult = function() {
-    element.forEach((list) => {
-     console.log(list)
-    })
-  }
+
   this.name = nome;
   this.lastName = sobrenome;
   this.age = idade;
-  this.completed = function() {
-    console.log(`${this.name} ${this.lastName} ${this.age}`);
-    console.log(`${element}`)
+
+  Pessoas.prototype.nomeCompleto = function() {
+    return `${this.name} ${this.lastName} ${this.age}`;
   }
   
 }
