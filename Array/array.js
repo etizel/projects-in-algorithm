@@ -33,3 +33,8 @@ html2 = html.split('section').join('ul').split('div').join('li');
 const carros = ['Ford', 'Fiat', 'VW', 'Honda'];
 // Remova o último carro, mas antes de remover
 // salve a array original em outra variável
+
+carros.pop();
+carrosPop = carros.slice('section');
+
+console.log(carrosPop);
