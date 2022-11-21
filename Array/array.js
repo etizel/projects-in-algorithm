@@ -29,3 +29,7 @@ let html = `<section>
 
 html = html;
 html2 = html.split('section').join('ul').split('div').join('li');
+
+const carros = ['Ford', 'Fiat', 'VW', 'Honda'];
+// Remova o último carro, mas antes de remover
+// salve a array original em outra variável
