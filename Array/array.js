@@ -18,3 +18,6 @@ console.log(estudantes.reverse());
 console.log(estudantes.includes('Joana'));
 // Verifique se Juliana faz parte dos estudantes
 console.log(estudantes.includes('Juliana'));
+
+html = html;
+html2 = html.split('section').join('ul').split('div').join('li');
