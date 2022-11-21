@@ -38,3 +38,9 @@ carros.pop();
 carrosPop = carros.slice('section');
 
 console.log(carrosPop);
+
+//Modifique a strind with split
+let text = 'How are you doing today?';
+const myArray = text.split(' ');
+
+const myArray2 = text.split(' ', 3);
