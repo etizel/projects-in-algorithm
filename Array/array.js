@@ -110,3 +110,7 @@ const L = champsZ.reduce((acumulator, item, index) => {
   acumulator[index] = item.name;
   return acumulator;
 });
+
+// some() verificação
+
+const fruits = ['Uva', 'Banana', 'Maçã'];
