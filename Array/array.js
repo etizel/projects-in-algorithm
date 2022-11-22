@@ -58,3 +58,11 @@ const champs = [
 
   { name: 'Janna', price: 4000 },
 ];
+
+const walKing = champs.map((c) => c.name);
+const pricIng = champs.map((c) => c.price);
+
+console.log(pricIng);
+console.log(walKing);
+
+console.log(champs);
