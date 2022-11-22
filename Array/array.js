@@ -70,3 +70,8 @@ console.log(champs);
 // reduce()
 
 const numbersY = [2, 4, 6, 8, 10, 20, 39, 66, 99, 130];
+
+const numbersX = numbersY.reduce((acumulator, item) => {
+  console.log(acumulator, item);
+  return acumulator + item;
+}, 0);
