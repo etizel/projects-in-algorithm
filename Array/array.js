@@ -114,3 +114,7 @@ const L = champsZ.reduce((acumulator, item, index) => {
 // some() verificação
 
 const fruits = ['Uva', 'Banana', 'Maçã'];
+
+const fruitsX = fruits.some((fruits) => {
+  return fruits === 'Uva';
+});
