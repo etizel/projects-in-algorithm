@@ -84,3 +84,19 @@ const stringX = stringY.reduce((acumulator, item) => {
   console.log(acumulator, item);
   return acumulator + item;
 });
+
+// reduce() object
+
+const champsZ = [
+  { name: 'Lissandra', price: 7999 },
+
+  { name: 'Annie', price: 3699 },
+
+  { name: 'Miss Fortune', price: 7999 },
+
+  { name: 'Senna', price: 5600 },
+
+  { name: 'Nami', price: 7999 },
+
+  { name: 'Janna', price: 4000 },
+];
