@@ -45,13 +45,16 @@ const myArray = text.split(' ');
 
 const myArray2 = text.split(' ', 3);
 
-
-
-
 // map()
 
-
 const champs = [
-  {name: 'Lissandra',
-   price: 7999,
-  },
+  { name: 'Lissandra', price: 7999 },
+  { name: 'Annie', price: 3699 },
+
+  { name: 'Miss Fortune', price: 7999 },
+  { name: 'Senna', price: 5600 },
+
+  { name: 'Nami', price: 7999 },
+
+  { name: 'Janna', price: 4000 },
+];
