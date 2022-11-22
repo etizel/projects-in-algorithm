@@ -67,7 +67,7 @@ console.log(walKing);
 
 console.log(champs);
 
-// reduce()
+// reduce() numbers
 
 const numbersY = [2, 4, 6, 8, 10, 20, 39, 66, 99, 130];
 
@@ -75,3 +75,7 @@ const numbersX = numbersY.reduce((acumulator, item) => {
   console.log(acumulator, item);
   return acumulator + item;
 }, 0);
+
+// reduce() strings
+
+const stringY = ['Sakura Haruno', 'Shikamaru Nara', 'Hinata Hyuga'];
