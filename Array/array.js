@@ -79,3 +79,8 @@ const numbersX = numbersY.reduce((acumulator, item) => {
 // reduce() strings
 
 const stringY = ['Sakura Haruno', 'Shikamaru Nara', 'Hinata Hyuga'];
+
+const stringX = stringY.reduce((acumulator, item) => {
+  console.log(acumulator, item);
+  return acumulator + item;
+});
