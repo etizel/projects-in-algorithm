@@ -100,3 +100,8 @@ const champsZ = [
 
   { name: 'Janna', price: 4000 },
 ];
+
+const Y = champsZ.reduce((acumulator, item, index) => {
+  acumulator[index] = item.price;
+  return acumulator;
+});
