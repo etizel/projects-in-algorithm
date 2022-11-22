@@ -44,3 +44,14 @@ let text = 'How are you doing today?';
 const myArray = text.split(' ');
 
 const myArray2 = text.split(' ', 3);
+
+
+
+
+// map()
+
+
+const champs = [
+  {name: 'Lissandra',
+   price: 7999,
+  },
