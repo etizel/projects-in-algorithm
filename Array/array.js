@@ -150,3 +150,31 @@ const maiorque100 = numeros.filter((x) => x >= 100);
 // Verifique se Baixo faz parte
 // da lista de instrumentos e retorne true
 const instrumentos = ['Guitarra', 'Baixo', 'Bateria', 'Teclado'];
+
+const instrumentosSome = instrumentos.some((item) => {
+  return item === 'Baixo';
+});
+
+// Retorne o valor total das compras
+const compras = [
+  {
+    item: 'Banana',
+    preco: 'R$ 4,99',
+  },
+  {
+    item: 'Ovo',
+    preco: 'R$ 2,99',
+  },
+  {
+    item: 'Carne',
+    preco: 'R$ 25,49',
+  },
+  {
+    item: 'Refrigerante',
+    preco: 'R$ 5,35',
+  },
+  {
+    item: 'Quejo',
+    preco: 'R$ 10,60',
+  },
+];
