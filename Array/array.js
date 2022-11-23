@@ -185,3 +185,25 @@ const reduceItemns = compras.reduce((acumulator, item, index) => {
   acumulator[index] = item.preco;
   return acumulator + itemLimpo;
 }, 0);
+
+// filter()
+
+const itemns = ['Banana', undefined, null, '', 'Uva', 0, 'Maçã'];
+
+const cleanArray = itemns.filter((item) => {
+  return item;
+});
+
+const numberss = [9, 99, 36, 77, 180, 741];
+
+const cleanNumbers = numberss.filter((item) => item >= 99);
+
+const peoples = ['Jilbert', '', null, undefined, 'Reiner', 0, 'Mikasa'];
+
+const cleanPeoples = peoples.filter((item) => {
+  return item;
+});
+
+const list = [3, 33, 69, 741, 360, 19];
+
+const cleanList = list.filter((l) => l < 69);
