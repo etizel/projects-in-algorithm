@@ -126,3 +126,10 @@ const fruitsX = fruits.some((fruits) => {
 // aulas e horas de cada curso
 const curso = document.querySelectorAll('.curso');
 const arrayAll = Array.from(curso);
+
+const mapObject = arrayAll.map((item) => {
+  const titulo = item.querySelector('h1').innerText;
+  const descricao = item.querySelector('p').innerText;
+  const aulas = item.querySelector('.aulas').innerText;
+  const horas = item.querySelector('.horas').innerText;
+});
