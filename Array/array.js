@@ -140,3 +140,9 @@ const mapObject = arrayAll.map((item) => {
     horas,
   };
 });
+
+// Retorne uma lista com os
+// números maiores que 100
+const numeros = [3, 44, 333, 23, 122, 322, 33];
+
+const maiorque100 = numeros.filter((x) => x >= 100);
