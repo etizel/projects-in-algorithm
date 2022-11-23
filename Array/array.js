@@ -132,4 +132,11 @@ const mapObject = arrayAll.map((item) => {
   const descricao = item.querySelector('p').innerText;
   const aulas = item.querySelector('.aulas').innerText;
   const horas = item.querySelector('.horas').innerText;
+
+  return {
+    titulo,
+    descricao,
+    aulas,
+    horas,
+  };
 });
