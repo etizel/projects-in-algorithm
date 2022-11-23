@@ -178,3 +178,10 @@ const compras = [
     preco: 'R$ 10,60',
   },
 ];
+
+const reduceItemns = compras.reduce((acumulator, item, index) => {
+  const itemLimpo = +item.preco.replace('R$', '').replace(',', '.');
+  console.log(itemLimpo);
+  acumulator[index] = item.preco;
+  return acumulator + itemLimpo;
+}, 0);
