@@ -118,3 +118,11 @@ const fruits = ['Uva', 'Banana', 'Maçã'];
 const fruitsX = fruits.some((fruits) => {
   return fruits === 'Uva';
 });
+
+// reduce()
+
+// Selecione cada curso e retorne uma array
+// com objetos contendo o título, descricao,
+// aulas e horas de cada curso
+const curso = document.querySelectorAll('.curso');
+const arrayAll = Array.from(curso);
