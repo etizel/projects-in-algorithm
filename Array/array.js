@@ -146,3 +146,7 @@ const mapObject = arrayAll.map((item) => {
 const numeros = [3, 44, 333, 23, 122, 322, 33];
 
 const maiorque100 = numeros.filter((x) => x >= 100);
+
+// Verifique se Baixo faz parte
+// da lista de instrumentos e retorne true
+const instrumentos = ['Guitarra', 'Baixo', 'Bateria', 'Teclado'];
