@@ -25,3 +25,11 @@ const missFortune = {
 const callChamp = champs.call(nami);
 const callChamp2 = champs.call(lissandra);
 const callChamp3 = champs.call(missFortune);
+
+
+//criação de método através de prototipo e função construtora para adição de classe
+
+Dom.prototype.active = function(classe) {
+  console.log(this);
+  this.element.classList.add(classe);
+}
