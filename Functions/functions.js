@@ -37,3 +37,13 @@ Array.prototype.moreThis = function() {
 
 Array.prototype.pop.call(frutas1)
 Array.prototype.push.call(frutas1, 'Banana');
+
+
+
+// Utilizando filter dentro de uma Nodelist através do prototype
+
+const li1 = document.querySelectorAll('li');
+
+const filter = Array.prototype.filter.call(li1, (item) => {
+  return item.classList.contains('active');
+});
