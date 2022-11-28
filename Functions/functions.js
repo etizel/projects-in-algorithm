@@ -27,14 +27,13 @@ const callChamp2 = champs.call(lissandra);
 const callChamp3 = champs.call(missFortune);
 
 
-//criação de método através de prototipo e função construtora para adição de classe
+//criação de método através de prototipo e função construtora para utilizar métodos de arrays dentro de arrays-like com o call();
 
- function Dom(selector) {
-  this.element = document.querySelector(selector);
-};
-  
+const frutas1 = ['Uva', 'Maçã', 'Banana'];
 
-Dom.prototype.active = function(classe) {
-  console.log(this);
-  this.element.classList.add(classe);
+Array.prototype.moreThis = function() {
+  console.log(this)
 }
+
+Array.prototype.pop.call(frutas1)
+Array.prototype.push.call(frutas1, 'Banana');
