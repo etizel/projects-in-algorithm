@@ -16,3 +16,8 @@ const nami = {
   power: 'Maré Violenta',
   money: 6500,
 };
+
+const missFortune = {
+  power: 'Chuva de Disparos',
+  money: 7900,
+}
