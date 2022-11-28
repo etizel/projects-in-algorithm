@@ -21,3 +21,7 @@ const missFortune = {
   power: 'Chuva de Disparos',
   money: 7900,
 }
+
+const callChamp = champs.call(nami);
+const callChamp2 = champs.call(lissandra);
+const callChamp3 = champs.call(missFortune);
