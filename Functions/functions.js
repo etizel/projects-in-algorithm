@@ -67,3 +67,7 @@ function eleMents(tag, classe, conteudo) {
 }
 
 console.log(eleMents('div', 'active', 'This is content'));
+
+// Crie uma nova função utilizando a anterior como base
+// essa nova função deverá sempre criar h1 com a
+// classe titulo. Porém o parâmetro conteudo continuará dinâmico
