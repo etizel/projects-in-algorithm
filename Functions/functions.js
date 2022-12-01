@@ -71,3 +71,7 @@ console.log(eleMents('div', 'active', 'This is content'));
 // Crie uma nova função utilizando a anterior como base
 // essa nova função deverá sempre criar h1 com a
 // classe titulo. Porém o parâmetro conteudo continuará dinâmico
+
+const h1Titulo = eleMents.bind(null, 'h1', 'titulo');
+const cursosJS = h1Titulo('Cursos de Javascript');
+const cursosHTML = h1Titulo('Cursos de HTML');
