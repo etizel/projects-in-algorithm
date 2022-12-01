@@ -53,3 +53,7 @@ const reduceP = Array.prototype.reduce.call(
   },
   0,
 );
+
+// Crie uma função que retorne novos elementos
+// html, com os seguintes parâmetros
+// tag, classe e conteudo.
