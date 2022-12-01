@@ -65,3 +65,5 @@ function eleMents(tag, classe, conteudo) {
 
   return element;
 }
+
+console.log(eleMents('div', 'active', 'This is content'));
