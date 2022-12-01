@@ -57,3 +57,11 @@ const reduceP = Array.prototype.reduce.call(
 // Crie uma função que retorne novos elementos
 // html, com os seguintes parâmetros
 // tag, classe e conteudo.
+
+function eleMents(tag, classe, conteudo) {
+  const element = document.createElement(tag);
+  element.classList.add(classe);
+  element.innerText = conteudo;
+
+  return element;
+}
