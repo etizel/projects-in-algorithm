@@ -1,0 +1,27 @@
+.quadrado {
+  width: 400px;
+  height: 500px;
+  display: block;
+  background: #333;
+  color: aliceblue;
+  font-family: monospace;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 500;
+  top: 300px;
+  left: 700px;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-family: monospace;
+  background: #e45;
+  width: 100px;
+  height: 100px;
+  border-radius: 2px;
+  box-shadow: 0, 0 ,0,.6;
+  border: 2px solid #333;
+  cursor: pointer;
+
+}
