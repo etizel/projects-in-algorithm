@@ -1,23 +1,27 @@
 const start = document.querySelector('[data-start]');
 const pause = document.querySelector('[data-pause]');
-const reset = document.querySelector('[data-reset]');
+const time = document.querySelector('[data-time]');
 
 start.addEventListener('click', activeCronos);
+pause.addEventListener('click', pauseCronos);
+pause.addEventListener('dblclick', resetCronos);
+
+let i = 0;
+let timer;
 
 function activeCronos() {
-  var cronometro = setInterval(callback, 1000);
-  var i = 0;
-  function callback() {
-    console.log(i++);
-  }
+  timer = setInterval(() => {
+    time.innerText = i++;
+  }, 1000);
+  start.setAttribute('disabled', '');
 }
 
-pause.addEventListener('click', pauseCronos);
-
 function pauseCronos() {
-  var cronometro = setInterval(callback, 1000);
+  clearInterval(timer);
+  start.removeAttribute('disabled');
+}
 
-  function callback() {
-    clearInterval(cronometro);
-  }
+function resetCronos() {
+  time.innerText = 0;
+  i = 0;
 }
