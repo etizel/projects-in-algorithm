@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <style>
+    label {
+      display: block;
+      font-family: monospace;
+      font-weight: bold;
+      margin-bottom: .5rem;
+      margin-top: 1rem;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: .5rem;
+      border: 2px solid #333;
+      font-size: 1rem;
+      margin-bottom: .5rem;
+      border-radius: 3px;
+
+    }
+  </style>
+
+
+
+  <section class="form">
+    <form name="contato" id="contato">
+
+
+      <!-- type of input's -->
+
+      <!-- <input type="color">
+      <input type="date">
+      <input type="number">
+      <input type="range">
+      <input type="password"> -->
+
+      <label for="identidade">Possui identidade?</label>
+      <input type="checkbox" value="identidade" id="identidade">
+      <label for="casado">Casado?</label>
+      <input type="checkbox" value="casado" id="casado">
+
+
+
+
+    </form>
+    <span class="text"></span>
+
+
+
+    <script>
+      const form = document.getElementById('contato');
+
+      function handleChange(event) {
+        if (event.target.checked)
+          console.log(event.target.value)
+      }
+
+
+      form.addEventListener('change', handleChange);
+
+
+    </script>
+
+</body>
+
+</html>
