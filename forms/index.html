@@ -34,10 +34,15 @@
       font-size: 1rem;
       margin-bottom: .5rem;
       border-radius: 3px;
+
     }
 
     textarea {
       max-height: 150px;
+    }
+
+    .invalid {
+      border: solid 1px #e45;
     }
   </style>
 
@@ -46,9 +51,12 @@
   <section class="form">
     <form name="contato" id="contato">
       <label for="nome">Nome</label>
-      <input type="text" name="nome" id="nome">
+      <input type="text" name="nome" id="nome" required>
+      <span class="erro"></span>
+
       <label for="email">Email</label>
-      <input type="email" name="email" id="email">
+      <input type="email" name="email" id="email" required>
+      <span class="erro"></span>
 
       <label for="mensagem">Mensagem</label>
       <textarea name="mensagem" id="mensagem" cols="30" rows="7"></textarea>
@@ -60,8 +68,19 @@
     <script>
       const contato = document.querySelector('#contato');
       function handleKeyUp(event) {
-        const text = document.querySelector('.text');
-        text.innerText = event.target.value;
+        const target = event.target;
+
+        if (!target.checkValidity()) {
+          target.classList.add('invalid');
+          // target.setCustomValidity('Esse campo é muito importante!!!')
+          target.nextElementSibling.innerText = target.validationMessage;
+        } else {
+          target.classList.remove('invalid');
+        }
+        console.log(event.target.checkValidity());
+
+        console.log(target);
+
       }
       contato.addEventListener('keyup', handleKeyUp);
 
