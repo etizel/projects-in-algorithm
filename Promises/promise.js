@@ -9,6 +9,8 @@ const promessa = new Promise((resolve, reject) => {
   }
 });
 
+// then().finally()
+
 const thenX = promessa
   .then((resolve) => {
     console.log(resolve);
@@ -22,3 +24,16 @@ const thenX = promessa
     end = X;
     console.log(end);
   });
+
+console.log(thenX);
+// catch
+
+// const thenX = promessa
+//   .then((resolve) => {
+//     console.log(resolve);
+//     return resolve;
+//   })
+//   .catch((reject) => {
+//     console.log(reject);
+//   });
+// console.log(thenX);
