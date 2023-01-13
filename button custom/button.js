@@ -33,3 +33,10 @@ const handleStyling = {
     this.element.style.fontSize = value + 'rem';
   },
 };
+
+function handleChange(event) {
+  const name = event.target.name;
+  const value = event.target.value;
+  handleStyling[name](value);
+  showCss();
+}
