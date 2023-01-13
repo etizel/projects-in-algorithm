@@ -37,3 +37,23 @@ console.log(thenX);
 //     console.log(reject);
 //   });
 // console.log(thenX);
+
+const login = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve('Usuário logado');
+  }, 2000);
+});
+
+const dados = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve('Dados carregados');
+  }, 1000);
+});
+
+const carregouTudo = Promise.all([login, dados]);
+
+carregouTudo.then((resolve) => {
+  console.log(resolve);
+});
+
+console.log(carregouTudo);
