@@ -21,3 +21,9 @@ const handleStyling = {
   width(value) {
     this.element.style.width = value + 'px';
   },
+  border(value) {
+    this.element.border = value;
+  },
+  borderRadius(value) {
+    this.element.style.borderRadius = value + 'px';
+  },
