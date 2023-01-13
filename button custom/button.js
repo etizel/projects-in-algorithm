@@ -3,7 +3,6 @@ const cssText = document.querySelector('.css');
 const btn = document.querySelector('.btn');
 controles.addEventListener('change', handleChange);
 
-
 const handleStyling = {
   element: btn,
   text(value) {
@@ -27,3 +26,10 @@ const handleStyling = {
   borderRadius(value) {
     this.element.style.borderRadius = value + 'px';
   },
+  fontFamily(value) {
+    this.element.style.fontFamily = value;
+  },
+  fontSize(value) {
+    this.element.style.fontSize = value + 'rem';
+  },
+};
