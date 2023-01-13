@@ -15,3 +15,9 @@ const handleStyling = {
   backgroundColor(value) {
     this.element.style.backgroundColor = value;
   },
+  height(value) {
+    this.element.style.height = value + 'px';
+  },
+  width(value) {
+    this.element.style.width = value + 'px';
+  },
