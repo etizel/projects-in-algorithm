@@ -9,3 +9,6 @@ const handleStyling = {
   text(value) {
     this.element.innerText = value;
   },
+  color(value) {
+    this.element.style.color = value;
+  },
