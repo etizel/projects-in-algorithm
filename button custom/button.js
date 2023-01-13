@@ -40,3 +40,7 @@ function handleChange(event) {
   handleStyling[name](value);
   showCss();
 }
+
+function showCss() {
+  cssText.innerHTML = btn.style.cssText.split('; ').join(';</span><span>');
+}
