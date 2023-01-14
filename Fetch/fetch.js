@@ -20,3 +20,14 @@ requisition
   .then((body) => {
     console.log(body);
   });
+
+//blob()
+
+const image = fetch('./image.jpeg');
+
+image
+  .then((response) => response.blob())
+  .then((imgBlob) => {
+    const bloUrl = URL.createObjectURL(imgBlob);
+    console.log(bloUrl);
+  });
