@@ -26,7 +26,8 @@ const thenX = promessa
   });
 
 console.log(thenX);
-// catch
+
+// catch()
 
 // const thenX = promessa
 //   .then((resolve) => {
