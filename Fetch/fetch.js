@@ -12,3 +12,11 @@ doc
   });
 
 // type cors
+
+const requisition = fetch('https://viacep.com.br/ws/01001000/json/');
+
+requisition
+  .then((response) => response.json())
+  .then((body) => {
+    console.log(body);
+  });
