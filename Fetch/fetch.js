@@ -71,3 +71,12 @@ const statusY = fetch('docs.txt');
 statusY.then((response) => {
   console.log(response.status);
 });
+
+// url & type
+
+const req3 = fetch('https://viacep.com.br/ws/01001000/json/');
+
+req3.then((response) => {
+  console.log(response.url);
+  console.log(response.type);
+});
