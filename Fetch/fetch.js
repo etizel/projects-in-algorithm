@@ -55,3 +55,19 @@ req2.then((r) => {
     r.headers.forEach(console.log);
   });
 });
+
+//status
+
+//200
+const statusX = fetch('https://viacep.com.br/ws/01001000/json/');
+
+statusX.then((response) => {
+  console.log(response.status);
+});
+
+//404
+const statusY = fetch('docs.txt');
+
+statusY.then((response) => {
+  console.log(response.status);
+});
