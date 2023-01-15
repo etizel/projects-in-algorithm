@@ -45,3 +45,13 @@ rqe.then((r) => {
     console.log(json);
   });
 });
+
+//headers
+
+const req2 = fetch('https://viacep.com.br/ws/01001000/json/');
+
+req2.then((r) => {
+  r.json().then(() => {
+    r.headers.forEach(console.log);
+  });
+});
