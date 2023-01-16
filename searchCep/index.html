@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuscaCep</title>
+</head>
+
+<body>
+
+  <style>
+    body {
+      padding: 40px 40px;
+      font-family: monospace;
+      gap: 30px;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    input {
+      display: block;
+      margin-top: 30px;
+    }
+  </style>
+
+
+  <form id="buscaCep">
+
+    <label for="cep">CEP</label>
+    <input type="text" name="cep" id="cep">
+    <input type="button" value="Buscar Cep" id="btncep">
+
+  </form>
+  <div class="resultadoCep">
+
+  </div>
+  <script src="./searchcep.js"></script>
+</body>
+
+</html>
