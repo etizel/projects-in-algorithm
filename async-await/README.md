@@ -144,7 +144,7 @@ Em resumo, **`async/await`** é uma maneira moderna e legível de lidar com oper
 
 
 
-continue
+
 
 Para usar **`async/await`**, você precisa marcar uma função como **`async`** e, dentro dessa função, usar a palavra-chave **`await`** antes de chamar qualquer operação assíncrona. Por exemplo:
 
@@ -178,7 +178,7 @@ Em geral, **`async/await`** é mais fácil de ler e entender, mas **`.then()`** 
 
 
 
-continue
+
 
 Outra diferença importante é que quando você usa **`await`** em uma função **`async`** ela automaticamente retorna uma promessa, então você pode usar metodos de promessa como **`.then()`** e **`.catch()`** para lidar com erros e sucesso.
 
