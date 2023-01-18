@@ -206,4 +206,4 @@ getData()
 
 Aqui, usamos **`try/catch`** para lidar com erros dentro da função **`getData`**, e usamos **`.then()`** e **`.catch()`** para lidar com o sucesso ou falha da promessa retornada pela função **`getData`**.
 
-Em resumo, **`async/await`** é uma sintaxe moderna e legível para lidar com operações assíncronas, enquanto **`.then()`** é uma maneira de lidar com promessas que pode ser útil para encadear várias operações assíncronas e lidar com erros. Ambas as abordagens são válidas e podem ser usadas de acordo com as necessidades do projeto.
+
