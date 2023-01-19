@@ -7,6 +7,7 @@ function handlePopState(event) {
 }
 
 async function fetchUrl(url) {
+  document.querySelector('.content').innerHTML = 'load..';
   const selectFetch = await fetch(url);
   const selectText = await selectFetch.text();
   activeText(selectText);
