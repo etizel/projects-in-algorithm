@@ -12,7 +12,7 @@ async function pushData1() {
   document.body.innerText = dataJsonX;
 }
 pushData1();
-
+//linha teste
 async function pushData2() {
   try {
     const dataResponse = await fetch('./datta.json');
@@ -35,3 +35,24 @@ async function startAsync() {
   console.log(`${dataJSON} ${clientsJSON}`);
 }
 startAsync();
+
+// lendo um arquivo
+
+async function readFile() {
+  let file = await fs.promises.readFile('./clients.json');
+  console.log(file.toString());
+}
+
+// Escrevendo um arquivo
+
+async function writeFile() {
+  await fs.promises.writeFile('./clients.json', 'Hello, world!');
+  console.log('File written!');
+}
+
+// Aguardando um intervalo de tempo antes de continuar a execução:
+
+async function delay() {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  console.log('Delay complete!');
+}
