@@ -65,7 +65,7 @@ async function delay() {
 1. Executando várias tarefas assíncronas em paralelo:
 
 ```
-Copy code
+
 async function doTasks() {
   let task1 = task1();
   let task2 = task2();
@@ -106,7 +106,7 @@ async function handleError() {
 1. Fazendo várias requisições HTTP em paralelo e aguardando todas elas serem concluídas:
 
 ```
-Copy code
+
 async function getMultipleData() {
   let request1 = fetch('https://example.com/data1');
   let request2 = fetch('https://example.com/data2');
@@ -142,6 +142,13 @@ async function getData() {
 
 Em resumo, **`async/await`** é uma maneira moderna e legível de lidar com operações assíncronas, enquanto **`.then()`** é uma maneira de lidar com promessas que pode ser útil para encadear várias operações assíncronas.
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> f5a7cd7604c16cc80ba4b0ee83374fcc0f2f16ba
 Para usar **`async/await`**, você precisa marcar uma função como **`async`** e, dentro dessa função, usar a palavra-chave **`await`** antes de chamar qualquer operação assíncrona. Por exemplo:
 
 ```
@@ -172,6 +179,13 @@ Aqui, chamamos **`fetch`** para obter os dados, e usamos **`.then`** para encade
 
 Em geral, **`async/await`** é mais fácil de ler e entender, mas **`.then()`** pode ser útil para encadear várias operações assíncronas de forma concatenada e pode ser mais fácil de lidar com erros. Ambos os métodos são válidos e podem ser usados de acordo com as necessidades do projeto.
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> f5a7cd7604c16cc80ba4b0ee83374fcc0f2f16ba
 Outra diferença importante é que quando você usa **`await`** em uma função **`async`** ela automaticamente retorna uma promessa, então você pode usar metodos de promessa como **`.then()`** e **`.catch()`** para lidar com erros e sucesso.
 
 ```
@@ -197,3 +211,8 @@ getData()
 ```
 
 Aqui, usamos **`try/catch`** para lidar com erros dentro da função **`getData`**, e usamos **`.then()`** e **`.catch()`** para lidar com o sucesso ou falha da promessa retornada pela função **`getData`**.
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f5a7cd7604c16cc80ba4b0ee83374fcc0f2f16ba
