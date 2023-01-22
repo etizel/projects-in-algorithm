@@ -25,5 +25,16 @@ class Button {
   }
 }
 
+// invocando com o static
 const buttonStatik = Button.createButton('this is a button 2', 'lightpink');
 console.log(buttonStatik);
+
+// criando com um objeto externo
+
+// const pinkOptions = {
+//   backgroundColor: 'pink',
+//   text: 'this is a button',
+//   border: '2px solid',
+// };
+
+// const buttonPink = new Button(pinkOptions);
