@@ -35,10 +35,10 @@ function createButton(text) {
     return buttonElement;
   }
 
-  return {
+  return Object.freeze({
     text,
     element,
-  };
+  });
 }
 const btnSell = createButton('Buy');
 const btnBuy = createButton('Sell');
