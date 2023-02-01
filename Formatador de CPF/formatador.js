@@ -11,3 +11,12 @@ const cleanCPF = (cpf) => {
 const construirCPF = (cpf) => {
   return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, '$1.$2.$3-$4');
 };
+
+const formatarCPFS = (cpfs) => {
+  return cpfs.map(cleanCPF).map(construirCPF);
+};
+
+const replaceCPF = (cpfsElements) => {
+  const cpfs = elementsInnerText(cpfsElements);
+  const cpfsFormatados = formatarCPFS(cpfs);
+  console.log(cpfsFormatados);
