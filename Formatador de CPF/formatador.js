@@ -27,3 +27,5 @@ const replaceCPF = (cpfsElements) => {
 };
 
 const resultado = elementsInnerText(cpfsList);
+
+replaceCPF(cpfsList);
